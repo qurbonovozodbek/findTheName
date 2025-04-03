@@ -1,0 +1,135 @@
+body {
+  background: radial-gradient(circle at center, #1e1e2e, #11111a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.game-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+.category-list {
+  display: flex;
+  gap: 20px;
+}
+
+.category-button {
+  background: linear-gradient(135deg, #4a90e2, #005bea);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 91, 234, 0.4);
+}
+
+.category-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 91, 234, 0.6);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+  width: 350px;
+  margin-top: 20px;
+}
+
+.player-image {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid red;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.option-button {
+  /* background: linear-gradient(135deg, #1e1a1c, #1d1a1a);
+  background-color: #1e1e2e; */
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 4px 8px rgba(255, 117, 140, 0.4);
+}
+
+.option-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(255, 117, 140, 0.6);
+}
+
+.selected {
+  background: linear-gradient(135deg, #21d4fd, #b721ff);
+  box-shadow: 0px 6px 12px rgba(183, 33, 255, 0.6);
+}
+
+.feedback {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #1c1919;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #3b3b3b;
+}
+
+.option-button.selected {
+  background-color: #ddd;
+}
+
+.option-button.correct {
+  background-color: #4CAF50; /* Green for correct answer */
+  border-color: #388e3c;
+}
+
+.option-button.incorrect {
+  background-color: #b71c11; /* Red for incorrect answer */
+  border-color: #af2020;
+}
+
+.feedback {
+  font-size: 18px;
+  margin-top: 20px;
+}
