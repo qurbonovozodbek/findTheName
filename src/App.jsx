@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaReact } from "react-icons/fa";
+
 import "./App.css";
 
 const categories = [
@@ -1027,8 +1029,8 @@ export default function App() {
             </button>
           ))}
         </div>
-        {/* <p className="feedback">{feedback}</p> */}
       </div>
+      <span className="creator"> <FaReact className="icon"/>created by @qurbonovozodbe</span>
     </div>
   );
 }

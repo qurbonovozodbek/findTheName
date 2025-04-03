@@ -133,3 +133,16 @@ body {
   font-size: 18px;
   margin-top: 20px;
 }
+
+.creator {
+  position: absolute;
+  color: rgb(84, 84, 84);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  top: 10px;
+}
+.icon {
+  color: #21d4fd;
+}
